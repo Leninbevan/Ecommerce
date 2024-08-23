@@ -1,0 +1,81 @@
+@use '../../index.scss';
+
+.cartBuyText{
+    padding-right: 20px;
+}
+
+.cartProduct {
+    display: flex;
+    height: 250px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    color: black;
+    padding: 20px;
+    width: 90%;
+}
+
+.cartImageOuter {
+    padding-right: 50px;
+    width: 20%;
+}
+
+.cartImage {
+    height: 100%;
+    width: 100%;
+}
+
+.cartProductDetails {
+    @include index.d-jc(space-between);
+    width: 80%;
+}
+
+.cartSelectedDetails {
+    width: 75%;
+}
+
+.cartProductName {
+    margin-bottom: 15px;
+}
+
+.CartProductRating {
+    margin-bottom: 15px;
+}
+
+.cartProductColor {
+    margin-bottom: 5px;
+}
+
+.cartProductSize {
+    margin-bottom: 5px;
+}
+
+.cartQtyDetails {
+    width: 25%;
+}
+
+.quantityHandle {
+    @include index.d-ai;
+    gap: 5px;
+}
+
+.cartQtyCount {
+    width: 140px;
+    @include index.d-ai;
+}
+
+.qtyInput{
+    // width: 100%;
+    width: 50px;
+    margin-left: 5px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.cartTotalPrice {
+    padding-left: 10px;
+}
+.cartRemoveButton{
+    margin-left: 10px;
+    margin-top: 40px;
+}

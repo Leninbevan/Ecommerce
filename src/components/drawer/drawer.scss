@@ -1,0 +1,82 @@
+@use '../../pages/home/home.scss';
+
+.homePage{
+    min-height: 100vh;
+}
+
+.homeBannerOuter {
+    @include home.d-jc;
+}
+
+.homeBanner {
+    width: home.$main-Width;
+    // padding-bottom: 50px;
+    color: white;
+}
+
+.homeHeader {
+    @include home.d-jc-ai(space-between);
+    margin-top: 25px;
+}
+
+.homeHeaderLogo {
+    @include home.d-ai;
+    width: 10%;
+}
+
+.shoppingIcon {
+    font-size: 50px !important;
+}
+
+.shoppingIconTitle1 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.shoppingIconTitle2 {
+    font-size: 15px;
+}
+
+.homeHeaderTabs {
+    @include home.d-jc(space-around);
+    width: 40%;
+}
+
+.headerIcons {
+    @include home.d-jc-ai(space-around);
+    width: 15%;
+    gap:5px
+}
+
+.headerHomeTab {
+    cursor: pointer;
+    padding: 5px 15px;
+    border-radius: 100px;
+    // color: white;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+.headerHomeTab:hover {
+    background-color: #ffffff30;
+}
+
+.headerShopTab {
+    @extend .headerHomeTab;
+}
+
+.headerAboutTab {
+    @extend .headerHomeTab;
+}
+
+.activeTab{
+    background-color: #ffffff30;
+}
+
+.headerSideIcon {
+    @extend .headerHomeTab;
+}
+
+.profileTab{
+    position: relative;
+}

@@ -1,0 +1,150 @@
+@use '../../index.scss';
+
+$main-Width: 90%;   
+
+@mixin d-jc($jc: center) {
+    display: flex;
+    justify-content: $jc;
+}
+
+@mixin d-ai($ai: center) {
+    display: flex;
+    align-items: $ai;
+}
+
+@mixin d-jc-ai($jc: center, $ai: center) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+@mixin adminLogin {
+    border-radius: 5px;
+    height: 45px;
+}
+
+p {
+    margin: 0;
+}
+
+.bannerContent{
+    @include d-jc;
+    width: 100%
+}
+
+.homeContent {
+    @include d-jc-ai;
+}
+
+.homeTextContent {
+    width: 45%;
+}
+
+.bannerContent {
+    font-size: 63px;
+    line-height: 1.1;
+}
+
+.adminLogin {
+    margin-top: 30px;
+}
+
+.adminTitle {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.6392156863);
+}
+
+.adminLoginForm {
+    @include d-ai;
+}
+
+.adminInput {
+    background: transparent;
+    border: 2px solid #ffffffa3;
+    width: 50%;
+    @include adminLogin;
+    color: white;
+    padding: 0px 10px;
+}
+
+.adminLoginButton {
+    @include adminLogin;
+    padding: 0px 30px;
+    color: white;
+    background-color: #f1b953;
+    border: none;
+    cursor: pointer;
+}
+
+.homeBannerImageDiv {
+    @include d-jc(right);
+    width: 40%;
+    position: relative;
+    margin-top: 30px;
+}
+
+.homeBannerImage {
+    height: 450px;
+    z-index: 1;
+    position: relative;
+    width: 100%;
+    // width: 80%;
+    object-fit: fill;
+}
+
+.imageBg {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4.5px);
+    border-radius: 30px;
+
+    position: absolute;
+    height: 80%;
+    width: 90%;
+    // width: 80%;
+    bottom: 0;
+    right: 0;
+}
+
+.homeBottomOuter {
+    @include d-jc;
+    padding-top: 70px;
+}
+
+.homeBottom {
+    width: 100%;
+    // background-color: #f8f9fd;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    box-shadow: 0 10px 15px 0 rgba(31, 38, 135, 0.37);
+}
+
+.partnerCount {
+    color: #f2c461;
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.partnerText {
+    font-size: 20px;
+    color: white;
+}
+
+.horizondalLine {
+    width: 4px;
+    background-color: #f0f1f6;
+    height: 100%;
+    margin: 0px 40px;
+}
+
+.bottomIcons {
+    @include d-jc-ai(space-between);
+    width: 80%;
+}
+
+.css-oxfx9-MuiPaper-root-MuiMobileStepper-root{
+    display: none !important;
+}

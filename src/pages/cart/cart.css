@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.Link {
+  color: white;
+  text-decoration: none;
+}
+
+.pointerNone {
+  pointer-events: none;
+}
+
+.bgLight {
+  background: linear-gradient(90deg, rgb(121, 88, 149) 0%, rgb(233, 164, 210) 35%, rgb(175, 125, 179) 100%);
+}
+
+.bgDark {
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(206, 206, 206) 35%, rgb(73, 73, 73) 100%);
+}
+
+.bgColorDark {
+  background-color: rgb(0, 0, 0);
+}
+
+.bgColorLight {
+  background-color: rgb(121, 88, 149);
+}
+
+.bgColorDarkHover:hover {
+  background-color: rgba(255, 255, 255, 0.6196078431);
+  color: black;
+}
+
+.bgColorLightHover:hover {
+  background-color: #e9a4d2;
+}
+
+.bgColorDarkActive {
+  background-color: rgba(255, 255, 255, 0.6196078431);
+  color: black;
+}
+
+.bgColorLightActive {
+  background-color: #e9a4d2;
+}
+
+.colorWhite {
+  color: white;
+}
+
+.colorBlack {
+  color: Black;
+}
+
+.css-hfutr2-MuiSvgIcon-root-MuiSelect-icon {
+  color: white !important;
+}
+
+.cartBuyText {
+  padding-right: 20px;
+}
+
+.cartProduct {
+  display: flex;
+  height: 250px;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  color: black;
+  padding: 20px;
+  width: 90%;
+}
+
+.cartImageOuter {
+  padding-right: 50px;
+  width: 20%;
+}
+
+.cartImage {
+  height: 100%;
+  width: 100%;
+}
+
+.cartProductDetails {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.cartSelectedDetails {
+  width: 75%;
+}
+
+.cartProductName {
+  margin-bottom: 15px;
+}
+
+.CartProductRating {
+  margin-bottom: 15px;
+}
+
+.cartProductColor {
+  margin-bottom: 5px;
+}
+
+.cartProductSize {
+  margin-bottom: 5px;
+}
+
+.cartQtyDetails {
+  width: 25%;
+}
+
+.quantityHandle {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.cartQtyCount {
+  width: 140px;
+  display: flex;
+  align-items: center;
+}
+
+.qtyInput {
+  width: 50px;
+  margin-left: 5px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.cartTotalPrice {
+  padding-left: 10px;
+}
+
+.cartRemoveButton {
+  margin-left: 10px;
+  margin-top: 40px;
+}/*# sourceMappingURL=cart.css.map */
