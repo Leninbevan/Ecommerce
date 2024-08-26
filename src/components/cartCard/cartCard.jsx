@@ -1,14 +1,12 @@
-import './cartCard.scss'
-import { Grid } from '@mui/material'
-import Rating from '@mui/material/Rating';
-import { IconButton } from '@mui/material';
-import { useDispatch } from 'react-redux';
-import { removeCart, changeCartCount } from '../../services/slice';
-import RemoveCircleIcon from '@mui/icons-material/RemoveCircle';
-import { Box } from '@mui/material';
-import CheckCircleOutlineSharpIcon from '@mui/icons-material/CheckCircleOutlineSharp';
 import AddCircleIcon from '@mui/icons-material/AddCircle';
+import CheckCircleOutlineSharpIcon from '@mui/icons-material/CheckCircleOutlineSharp';
+import RemoveCircleIcon from '@mui/icons-material/RemoveCircle';
+import { Box, Grid, IconButton } from '@mui/material';
+import Rating from '@mui/material/Rating';
 import { useEffect, useRef, useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { changeCartCount, removeCart } from '../../services/slice';
+import './cartCard.scss';
 
 function CartCard({ product }) {
     const dispatch = useDispatch()

@@ -1,9 +1,9 @@
-import * as React from 'react';
 import { styled } from '@mui/material/styles';
 import Switch from '@mui/material/Switch';
-import './themeButton.scss'
-import { useDispatch,useSelector } from 'react-redux';
+import * as React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { changeTheme } from '../../services/slice';
+import './themeButton.scss';
 
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
     width: 62,

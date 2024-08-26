@@ -1,22 +1,20 @@
-import Card from '@mui/material/Card';
-import CardHeader from '@mui/material/CardHeader';
-import CardMedia from '@mui/material/CardMedia';
-import CardContent from '@mui/material/CardContent';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import ZoomOutMapIcon from '@mui/icons-material/ZoomOutMap';
-import './productCard.scss'
-import LocalMallIcon from '@mui/icons-material/LocalMall';
-import Rating from '@mui/material/Rating';
-import { Link, useHistory } from 'react-router-dom';
-import { useState } from 'react';
-import { Box } from '@mui/system';
-import { addCart, removeCart, addWishList, removeWishList } from '../../services/slice';
-import { useDispatch, useSelector } from 'react-redux';
 import CloseIcon from '@mui/icons-material/Close';
-import { setPreviewParent } from '../../services/slice';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import ZoomOutMapIcon from '@mui/icons-material/ZoomOutMap';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardHeader from '@mui/material/CardHeader';
+import CardMedia from '@mui/material/CardMedia';
+import IconButton from '@mui/material/IconButton';
+import Rating from '@mui/material/Rating';
+import Typography from '@mui/material/Typography';
+import { Box } from '@mui/system';
+import { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { Link, useHistory } from 'react-router-dom';
+import { addWishList, removeWishList, setPreviewParent } from '../../services/slice';
+import './productCard.scss';
 
 function ProductCard({ product, pageType }) {
     const [rating, setRating] = useState(product.rating.rate)

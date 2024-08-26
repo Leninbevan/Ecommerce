@@ -1,7 +1,6 @@
-import { BrowserRouter, Switch, Route } from "react-router-dom"
-import Home from "../pages/home/home"
-import MiniDrawer from "./drawer/drawer"
+import { BrowserRouter, Route, Switch } from "react-router-dom"
 import BuyModal from "../pages/buyModal/buyModal"
+import MiniDrawer from "./drawer/drawer"
 
 function Router() {
     return (

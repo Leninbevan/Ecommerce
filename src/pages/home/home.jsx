@@ -1,19 +1,19 @@
-import './home.scss'
-import HomeShoppingImage from '../../assests/homeshoppingImage.png'
-import AppleIcon from '../../assests/appleIcon.png'
-import Walmart from '../../assests/walmartIcon.png'
-import AdidasIcon from '../../assests/adidasIcon.png'
-import NikeIcon from '../../assests/nikeIcon.png'
-import reebok from '../../assests/reebokIcon.png'
-import XboxIcon from '../../assests/xboxIcon.png'
-import PumaIcon from '../../assests/pumaIcon.png'
-import Box from '@mui/material/Box';
-import MobileStepper from '@mui/material/MobileStepper';
+import Box from '@mui/material/Box'
+import MobileStepper from '@mui/material/MobileStepper'
 import React, { useEffect } from 'react'
-import MensClothing from '../../assests/mensClothing.png'
-import Jewellery from '../../assests/jewellery.png'
-import Electronics from '../../assests/electronics.png'
 import { useSelector } from 'react-redux'
+import AdidasIcon from '../../assests/adidasIcon.png'
+import AppleIcon from '../../assests/appleIcon.png'
+import Electronics from '../../assests/electronics.png'
+import HomeShoppingImage from '../../assests/homeshoppingImage.png'
+import Jewellery from '../../assests/jewellery.png'
+import MensClothing from '../../assests/mensClothing.png'
+import NikeIcon from '../../assests/nikeIcon.png'
+import PumaIcon from '../../assests/pumaIcon.png'
+import reebok from '../../assests/reebokIcon.png'
+import Walmart from '../../assests/walmartIcon.png'
+import XboxIcon from '../../assests/xboxIcon.png'
+import './home.scss'
 
 function Home() {
     const steps = [

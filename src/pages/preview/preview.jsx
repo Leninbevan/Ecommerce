@@ -1,18 +1,16 @@
-import './preview.scss';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import Rating from '@mui/material/Rating';
+import { Box } from '@mui/system';
 import Grid from '@mui/system/Unstable_Grid/Grid';
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { getProductDetails } from '../../services/thunkFunctions';
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-import { Link, useHistory } from 'react-router-dom';
-import Rating from '@mui/material/Rating';
+import { Link, useHistory, useParams } from 'react-router-dom';
 import Loader from '../../components/loader/loader';
-import { getSpecificProducts, getAllProducts } from '../../services/thunkFunctions';
-import { addCart, sortCart } from '../../services/slice';
-import { Box } from '@mui/system';
+import { addCart } from '../../services/slice';
+import { getAllProducts, getProductDetails, getSpecificProducts } from '../../services/thunkFunctions';
+import './preview.scss';
 
 function Preview() {
     const params = useParams()

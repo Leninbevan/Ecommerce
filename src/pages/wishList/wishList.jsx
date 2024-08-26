@@ -1,12 +1,10 @@
-import './wishList.scss'
-import { useEffect, useState } from 'react';
-import Grid from '@mui/material/Grid';
-import { useDispatch, useSelector } from 'react-redux';
-import { getAllProducts } from '../../services/thunkFunctions';
-import ProductCard from '../../components/productCard/productCrad';
-import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
+import Grid from '@mui/material/Grid';
+import MenuItem from '@mui/material/MenuItem';
 import Select from '@mui/material/Select';
+import { useDispatch, useSelector } from 'react-redux';
+import ProductCard from '../../components/productCard/productCrad';
+import './wishList.scss';
 // import Loader from '../../components/loader/loader';
 // import { getSpecificProducts } from '../../services/thunkFunctions';
 import { setWishListSorting, sortWishList } from '../../services/slice';

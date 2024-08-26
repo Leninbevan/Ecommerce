@@ -1,14 +1,13 @@
-import './cart.scss'
-import { useEffect, useState } from 'react';
-import Grid from '@mui/material/Grid';
-import { useDispatch, useSelector } from 'react-redux';
-import Loader from '../../components/loader/loader';
-import { setModalOpen } from '../../services/slice';
 import LocalMallIcon from '@mui/icons-material/LocalMall';
 import { Box } from '@mui/material';
-import BuyModal from '../buyModal/buyModal';
-import { useHistory } from 'react-router-dom';
+import Grid from '@mui/material/Grid';
+import { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import CartCard from '../../components/cartCard/cartCard';
+import Loader from '../../components/loader/loader';
+import { setModalOpen } from '../../services/slice';
+import BuyModal from '../buyModal/buyModal';
+import './cart.scss';
 
 function Cart() {
     const cartList = useSelector(state => state.product.cartList)
@@ -17,7 +16,7 @@ function Cart() {
     const count = cartList.length
     const [totalAmount, setTotalAmount] = useState(0)
     const theme = useSelector(state => state.product.theme)
-    const history = useHistory()
+
 
     useEffect(() => {
         const totalAmount = cartList.reduce((acc, curr) => {

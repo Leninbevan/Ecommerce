@@ -1,26 +1,21 @@
-import './buyModal.scss'
-import * as React from 'react';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
+import { IconButton, TextField } from '@mui/material';
 import Backdrop from '@mui/material/Backdrop';
 import Box from '@mui/material/Box';
-import Modal from '@mui/material/Modal';
-import Fade from '@mui/material/Fade';
 import Button from '@mui/material/Button';
-import { useDispatch, useSelector } from 'react-redux';
-import { setModalOpen } from '../../services/slice';
-import { TextField } from '@mui/material';
-import MenuItem from '@mui/material/MenuItem';
-import FormHelperText from '@mui/material/FormHelperText';
+import Fade from '@mui/material/Fade';
 import FormControl from '@mui/material/FormControl';
-import Select from '@mui/material/Select';
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
-import { IconButton } from '@mui/material';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import Modal from '@mui/material/Modal';
 import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import FormLabel from '@mui/material/FormLabel';
-import OrderConfirm from '../../assests/orderConfirm.png'
+import * as React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import OrderConfirm from '../../assests/orderConfirm.png';
+import { setModalOpen } from '../../services/slice';
+import './buyModal.scss';
 
 import { useFormik } from 'formik';
 import * as yup from 'yup';

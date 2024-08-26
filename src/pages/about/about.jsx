@@ -1,7 +1,7 @@
-import './about.scss'
+import { Box } from '@mui/system'
 import AboutImage1 from '../../assests/aboutImage1.png'
 import AboutImage2 from '../../assests/aboutImage2.png'
-import { Box } from '@mui/system'
+import './about.scss'
 
 function About() {
     return (
